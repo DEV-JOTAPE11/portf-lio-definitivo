@@ -890,7 +890,11 @@ header.scrolled {
     .profile-image,
     .about-img {
         width: 300px;
-        height: 400px;
+        height: 300px;
+        border-radius: 50%;
+        
+        object-fit: cover;
+        object-position: center 20%;
     }
     
     .floating-card {
@@ -951,8 +955,12 @@ header.scrolled {
     
     .profile-image,
     .about-img {
-        width: 250px;
-        height: 350px;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        
+        object-fit: cover;
+        object-position: center 20%;
     }
     
     .social-icon {
@@ -990,8 +998,12 @@ header.scrolled {
     
     .profile-image,
     .about-img {
-        width: 220px;
+        width: 300px;
         height: 300px;
+        border-radius: 50%;
+        
+        object-fit: cover;
+        object-position: center 20%;
     }
 }
 
@@ -1536,5 +1548,60 @@ header.scrolled {
         width: 50px;
         height: 50px;
         font-size: 1.2rem;
+    }
+}
+
+/* --- Botão WhatsApp Flutuante --- */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366; /* Verde oficial do WhatsApp */
+    color: #FFF;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
+    z-index: 10000; /* Garante que fique acima de tudo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    
+    /* A mágica do pulo acontece aqui */
+    animation: whatsapp-jump 2s infinite;
+}
+
+/* Animação de Pular */
+@keyframes whatsapp-jump {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px); /* Pula 10px pra cima */
+    }
+    60% {
+        transform: translateY(-5px); /* Pula 5px pra cima */
+    }
+}
+
+/* Efeito ao passar o mouse */
+.whatsapp-float:hover {
+    background-color: #128C7E; /* Verde mais escuro */
+    transform: scale(1.1); /* Aumenta um pouco */
+    animation-play-state: paused; /* Para de pular quando passa o mouse */
+}
+
+/* Ajuste para Celulares (Fica um pouco menor e mais no canto) */
+@media (max-width: 768px) {
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 25px;
     }
 }
