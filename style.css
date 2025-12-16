@@ -935,6 +935,10 @@ header.scrolled {
         font-size: 1.5rem;
     }
     
+    .experience-badge {
+        position: static;
+        margin: 1.5rem auto 0;
+    }
     .hero-desc {
         font-size: 1rem;
         max-width: 100%;
