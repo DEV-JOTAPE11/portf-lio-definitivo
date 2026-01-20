@@ -3,6 +3,10 @@
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
+<p align="center">
+  <img alt="Preview do Portfólio" src="images/defini-capa.png" width="100%" style="border-radius: 8px; border: 2px solid #00eeff;">
+</p>
+
 ## 📄 Sobre o Projeto
 
 Este é o repositório do meu **Portfólio Profissional**, desenvolvido para apresentar meus projetos, habilidades e serviços como **Desenvolvedor Front-end** e especialista em **Landing Pages**.
